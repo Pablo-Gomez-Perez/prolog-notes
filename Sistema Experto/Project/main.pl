@@ -94,7 +94,6 @@ ingrediente_de(X,Y) :-
 % Verificar si una de las recetas es vegetariana
 % si uno solo de los ingredientes en la lista es animal o lacteo entonces
 % la receta no es vegetariana
-
 es_vegetariana(X) :-
     receta(X,Y),
     \+ (member(Z,Y),
